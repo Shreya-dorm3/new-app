@@ -1,0 +1,9 @@
+.img-background {
+    background-size: cover;
+}
+
+.headline-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}

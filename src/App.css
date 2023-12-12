@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  background-color: #151A30;
+  min-height: 100vh;
+  color: #f7f7f7
 }
 
 .App-logo {
@@ -35,4 +37,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
