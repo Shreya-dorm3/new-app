@@ -24,6 +24,11 @@ function LoginComponent(props) {
         inputDiv.current.blur();
     }
 
+    const redirect = (e) => {
+        e.preventDefault();
+        window.open('https://app.loch.one/welcome', "_blank");
+    }
+
     return (
         <React.Fragment>
             <div className="container-fluid">
@@ -33,7 +38,7 @@ function LoginComponent(props) {
                             <div className='carousel-notification'>
                                 <AutoplayCarousel></AutoplayCarousel>
                             </div>
-                            <div className='row w-100' style={{height: '50%'}}>
+                            <div className='row w-100' style={{ height: '50%' }}>
                                 <NoticeBoard></NoticeBoard>
                             </div>
                             <div>
@@ -58,7 +63,9 @@ function LoginComponent(props) {
                                                     onMouseLeave={mouseLeave}
                                                     onKeyDown={keyDown} />
                                             </div>
-                                            <button className='w-full my-2 py-2 bg-teal-500 shadow-lg shadow-teal-500/50 hover:shadow-teal-500/40 text-white font-semibold rounded-lg'>Get Started</button>
+                                            <button className='w-full my-2 py-2 bg-teal-500 shadow-lg shadow-teal-500/50 hover:shadow-teal-500/40 text-white font-semibold rounded-lg'
+                                                onClick={redirect}>
+                                                Get Started</button>
                                             <p className="my-5 text-uppercase mb-2">You'll receive an email with an invite link to join</p>
                                         </form>
                                     </div>
